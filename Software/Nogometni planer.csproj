@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADC20892-C69F-422E-9EA8-314985B0FDF5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nogometni_planer</RootNamespace>
+    <AssemblyName>Nogometni planer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Baza">
+      <HintPath>..\Baza\bin\Debug\Baza.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormaZaPozivanjeNaTermin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaPozivanjeNaTermin.Designer.cs">
+      <DependentUpon>FormaZaPozivanjeNaTermin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prijatelji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijatelji.Designer.cs">
+      <DependentUpon>Prijatelji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrijateljstvoPozivnica.cs" />
+    <Compile Include="Prijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava.Designer.cs">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grupa.cs" />
+    <Compile Include="Grupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grupe.Designer.cs">
+      <DependentUpon>Grupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="KreacijaGrupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KreacijaGrupe.Designer.cs">
+      <DependentUpon>KreacijaGrupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pozivnice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pozivnice.Designer.cs">
+      <DependentUpon>Pozivnice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poruka.cs" />
+    <Compile Include="GrupaPozivnica.cs" />
+    <Compile Include="PrivatnaPoruka.cs" />
+    <Compile Include="PrivatnePoruke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrivatnePoruke.Designer.cs">
+      <DependentUpon>PrivatnePoruke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registracija.Designer.cs">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Termin.cs" />
+    <Compile Include="Termini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Termini.Designer.cs">
+      <DependentUpon>Termini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TerminPozivnica.cs" />
+    <Compile Include="Tim.cs" />
+    <Compile Include="Timovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timovi.Designer.cs">
+      <DependentUpon>Timovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZvanjeUGrupuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZvanjeUGrupuForm.Designer.cs">
+      <DependentUpon>ZvanjeUGrupuForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormaZaPozivanjeNaTermin.resx">
+      <DependentUpon>FormaZaPozivanjeNaTermin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijatelji.resx">
+      <DependentUpon>Prijatelji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijava.resx">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grupe.resx">
+      <DependentUpon>Grupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KreacijaGrupe.resx">
+      <DependentUpon>KreacijaGrupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pozivnice.resx">
+      <DependentUpon>Pozivnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrivatnePoruke.resx">
+      <DependentUpon>PrivatnePoruke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registracija.resx">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Termini.resx">
+      <DependentUpon>Termini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timovi.resx">
+      <DependentUpon>Timovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZvanjeUGrupuForm.resx">
+      <DependentUpon>ZvanjeUGrupuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Nogometni planer.chm" />
+    <None Include="Properties\DataSources\GrupaPozivnica.datasource" />
+    <None Include="Properties\DataSources\PrijateljstvoPozivnica.datasource" />
+    <None Include="Properties\DataSources\TerminPozivnica.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

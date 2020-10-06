@@ -1,0 +1,5 @@
+C:\Ivan\PI\Projekt\r20--bculovic-istarcevi-aspiljak\Baza\bin\Debug\Baza.dll
+C:\Ivan\PI\Projekt\r20--bculovic-istarcevi-aspiljak\Baza\bin\Debug\Baza.pdb
+C:\Ivan\PI\Projekt\r20--bculovic-istarcevi-aspiljak\Baza\obj\Debug\Baza.csproj.CoreCompileInputs.cache
+C:\Ivan\PI\Projekt\r20--bculovic-istarcevi-aspiljak\Baza\obj\Debug\Baza.dll
+C:\Ivan\PI\Projekt\r20--bculovic-istarcevi-aspiljak\Baza\obj\Debug\Baza.pdb
